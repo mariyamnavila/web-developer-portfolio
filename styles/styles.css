@@ -177,12 +177,42 @@ footer{
     width: 50%;
 }
 footer input[type="text"], footer input[type=email], footer textarea{
-    height: 64px;
-    border-radius: 5px;
-    background-color: white;
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 24px;
+    /* Frame 7 */
+position: static;
+width: 548px;
+height: 57px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap: 10;
+padding: 19px 20px 19px 20px;
+margin-bottom: 20px;
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 16px;
     border: none;
 }
+
+@media screen and (max-width:576px) {
+    .skills-container,
+    .resume-container,
+    footer, 
+    .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-colunm{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type=email], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
+
