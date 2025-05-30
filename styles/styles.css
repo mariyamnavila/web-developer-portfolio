@@ -202,8 +202,26 @@ margin: 0px 16px;
     .skills-container,
     .resume-container,
     footer, 
+    .banner,
+    nav,
+    nav > ul,
     .about-items{
         flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
     }
     footer, .about{
         padding: 20px;
@@ -216,3 +234,8 @@ margin: 0px 16px;
     }
 }
 
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner{
+        flex-direction: column;
+    }
+}
